@@ -9,6 +9,11 @@ export default styles = StyleSheet.create ({
         paddingTop: 50,
         backgroundColor: 'rgb(100, 210, 255)'
     },
+    tituloApp: {
+        fontSize: 40,
+        fontWeight: 'bold',
+        margin: 30
+    },
     addItemContainer: {
         margin: 15,
         flexDirection: 'row',

@@ -47,6 +47,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.tituloApp}> Clima </Text>
       <AddItem onAddItem={agregarItem}/>      
       <View style={styles.listItemContainer}>
         <FlatList
