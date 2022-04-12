@@ -22,19 +22,6 @@ export default function App() {
     content= <CityScreen city={city} onBack={back}  />
   }
 
-  /*const [ itemSelected, setItemSelected ] = useState({})
-
-  const [ modalVisible, setModalVisible ] = useState(false)*/
-  
-  /*const onHandlerModal = id => {
-    setItemSelected(listItem.filter( item => item.id === id)[0]);
-    setModalVisible(!modalVisible);
-  }  
-  const closeModal = () => {
-    setModalVisible(!modalVisible);
-  }*/
-
-
 
   return (
     <View style={styles.container}>
@@ -42,5 +29,3 @@ export default function App() {
     </View>
   );
 }
-
-/*<ModalItem onDelete={onHandlerDelete} item={itemSelected} visible={modalVisible} onCancel={closeModal}/>*/
