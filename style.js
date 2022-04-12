@@ -6,7 +6,7 @@ export default styles = StyleSheet.create ({
         flex:1, 
         justifyContent: 'center', 
         alignItems: 'center',
-        paddingTop: 50,
+        paddingTop: 100,
         backgroundColor: 'rgb(100, 210, 255)'
     },
     tituloApp: {
@@ -36,8 +36,6 @@ export default styles = StyleSheet.create ({
         margin: 10,
     },
     listItem: {
-        fontSize: 20,
-        fontWeight: 'bold',
         backgroundColor: 'rgb(50, 173, 230)',
         width: 300,
         height: 100,
@@ -45,47 +43,35 @@ export default styles = StyleSheet.create ({
         borderColor: '#fff',
         borderRadius: 15,
         overflow: 'hidden',
-        textAlign: 'center',
-        margin: 20
-    },
-    modalCentered: {
-        flex:1, 
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    modalView: {
-        borderWidth: 1,
-        borderRadius: 20,
-        width: 300,
-        height: 160,
-        backgroundColor: 'white',
-        alignItems: 'center',
-        justifyContent: 'center',
-        overflow: "hidden"
-    },
-    tituloModal: {
-        flex:2,
-        backgroundColor: '#00B4D8',
-        width: '100%',
-        color: 'white',
-        alignItems: 'center',
-        justifyContent: 'space-around',
         flexDirection: 'row',
-    },
-    cuerpoModal: {
-        flex:3,
-        margin: 20,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         alignItems: 'center'
     },
-    textoTitulo: {
-        color: 'white',
+    item: {
+        fontSize: 18,
         fontWeight: 'bold',
-        fontSize: 15
+        marginLeft: 20
     },
-    botonModal: {
-        flex:2,
-        margin: 10,
+    buttonTrash: {
+        marginRight: 20
+    },
+    cityScreen: {
+        flex: 3, 
+    },
+    cityScreenHeader: {
         flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    titleCity: {
+        fontSize: 30,
+        flexGrow: 0,
+        flexShrink: 2,
+        flexBasis: 300,
+    },
+    buttonBack: {
+        flexGrow: 0,
+        flexShrink: 0,
+        flexBasis: 50,
     }
 })
