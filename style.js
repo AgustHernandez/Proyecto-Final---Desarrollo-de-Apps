@@ -73,5 +73,23 @@ export default styles = StyleSheet.create ({
         flexGrow: 0,
         flexShrink: 0,
         flexBasis: 50,
+    },
+    temperatura: {
+        
+    },
+    temperaturaActual: {
+        fontSize: 55,
+        textAlign: 'center',
+        marginTop: 30
+    },
+    detalleTemp: {
+        fontSize: 20,
+        textAlign: 'center',
+        marginTop: 10
+    },
+    tempMaxMin: {
+        fontSize: 20,
+        textAlign: 'center',
+        marginTop: 10
     }
 })

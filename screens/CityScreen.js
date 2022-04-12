@@ -12,9 +12,10 @@ const CityScreen = props => {
                 <Text style={styles.titleCity}>{props.city}</Text>
                 <AntDesign title="Volver" name='back' color='white' onPress={()=> props.onBack()} style={styles.buttonBack} size={35} />
             </View>
-            <View>
-                <Text style={styles.temperatura}>20°</Text>
-                <Text style={styles.temperatura}>Mayormente Despejado</Text>
+            <View style={styles.temperatura}>
+                <Text style={styles.temperaturaActual}>20°</Text>
+                <Text style={styles.detalleTemp}>Mayormente Despejado</Text>
+                <Text style={styles.tempMaxMin}>Máx.: 24° Mín.: 15°</Text>
             </View>
         </View>
     )
