@@ -1,46 +1,27 @@
-import './style';
+/*import './style';
 
 import React, {useState} from 'react';
 
-import CityScreen from './screens/CityScreen';
-import InitialScreen from './screens/InitialScreen';
-import {View} from 'react-native';
+import ClimaNavigator from './navigation/ClimaNavigator';
+import {View} from 'react-native';*/
 
-export default function App() {  
-  const [city, setCity] = useState('')
+/*import CityScreen from './screens/CityScreen';
+import InitialScreen from './screens/InitialScreen';*/
 
-  const handlerCity = value => {
-    setCity (value)
-  }
+import AppLoading from 'expo-app-loading';
+import ClimaNavigator from './navigation/ClimaNavigator';
+import { useFonts } from 'expo-font';
 
-  const back  = () => {
-    setCity ('')
-  }
+export default function App() { 
 
-  let content = <InitialScreen onSelectCity={handlerCity} />
-  if (city !== '') {
-    content= <CityScreen city={city} onBack={back}  />
-  }
+  const [loaded] = useFonts({
+    OpenSans: require('./assets/fonts/OpenSans-Regular.ttf'),
+    OpenSansBold: require('./assets/fonts/OpenSans-Bold.ttf')
+  })
 
-  /*const [ itemSelected, setItemSelected ] = useState({})
-
-  const [ modalVisible, setModalVisible ] = useState(false)*/
-  
-  /*const onHandlerModal = id => {
-    setItemSelected(listItem.filter( item => item.id === id)[0]);
-    setModalVisible(!modalVisible);
-  }  
-  const closeModal = () => {
-    setModalVisible(!modalVisible);
-  }*/
-
+  if(!loaded) return <AppLoading/>
 
 
   return (
-    <View style={styles.container}>
-      {content}
-    </View>
-  );
-}
-
-/*<ModalItem onDelete={onHandlerDelete} item={itemSelected} visible={modalVisible} onCancel={closeModal}/>*/
+    <ClimaNavigator/>
+  )};
